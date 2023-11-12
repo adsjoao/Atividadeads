@@ -1,0 +1,51 @@
+body {
+    background: radial-gradient(circle, #fef3f2, #ef5044);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: #fef3f2;
+    padding: 20px;
+    border: 1px;
+    width: 25%;
+    border-radius: 30px;
+}
+
+input {
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 5px;
+}
+
+button {
+
+    color: black;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 30px;
+    border: 5px;
+}
+
+a {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #dc938d;
+
+}

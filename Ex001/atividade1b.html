@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="ico" href="senac.ico">
+    <title>Atividade 01B</title>
+    <link rel="stylesheet" href="styleA.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Média</h1>
+
+    <fieldset class="fieldset">
+        <div>
+            <p>Média: <span id="id_media"></span></p>
+            <p>Situação: <span id="id_situacao"></span></p>
+            <p>A média de aprovação é 6</p>
+        </div>
+        <script>
+            let nota1 = parseFloat(prompt('Informe a primeira nota:'));
+            let nota2 = parseFloat(prompt('Informe a segunda nota:'));
+            let media = (nota1 + nota2) / 2;
+
+
+            if (media >= 6) {
+                document.getElementById("id_media").innerHTML = media;
+                document.getElementById("id_situacao").style.color = "green";
+                document.getElementById('id_situacao').innerHTML = 'APROVADO';
+            } else {
+                document.getElementById("id_media").innerHTML = media;
+                document.getElementById("id_situacao").style.color = "red";
+                document.getElementById('id_situacao').innerHTML = 'REPROVADO';
+            }
+        </script>
+
+        <a href="atividade1a.html" style="color: blue;background-color: white;text-decoration:none;">Clique aqui para
+            atividade 1a</a>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

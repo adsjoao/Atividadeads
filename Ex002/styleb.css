@@ -1,0 +1,56 @@
+body {
+    background: radial-gradient(circle, #c7fff7, #04817f);
+    color: #003234;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    margin-top: auto;
+}
+
+fieldset {
+    width: 25%;
+    margin: 20px auto;
+    border: 2px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    background-color: #c7fff7;
+}
+
+label {
+    color: #003234;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #003234;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4efae9;
+    color: #003234;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+p {
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #04817f;
+}

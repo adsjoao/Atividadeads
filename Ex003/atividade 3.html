@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="ico" href="senac.ico">
+  <link rel="stylesheet" href="style3.css">
+  <title>Atividade 3 </title>
+</head>
+
+<body>
+
+  <fieldset>
+    <h1>Lista de compras</h1>
+
+    <ul id="myList">
+      <li>Café</li>
+      <li>Chá</li>
+    </ul>
+    <div>
+      <label for="id_novo">Novo produto:</label>
+      <input type="text" id="id_novo" placeholder="Digite aqui">
+      <br>
+      <input type="radio" name="cor" value="red" id="bt_1">
+      <label for="bt_1">Cor vermelha</label><br>
+      <input type="radio" name="cor" value="green" id="bt_2">
+      <label for="bt_3">Cor verde</label><br>
+      <input type="radio" name="cor" value="orange" id="bt_3">
+      <label for="bt_3">Cor laranja</label>
+    </div>
+    <br>
+    <button id="button">Adicionar à lista</button>
+  </fieldset>
+
+
+  <script>
+    document.getElementById("button").addEventListener("click", myFunction)
+    function myFunction() {
+
+      const novo_elemento = document.getElementById('id_novo').value;
+      cor = document.querySelector('input[name="cor"]:checked').value;
+      const node = document.createElement("li");
+      const textnode = document.createTextNode(novo_elemento);
+      node.appendChild(textnode);
+      node.style.color = cor;
+      document.getElementById("myList").appendChild(node);
+
+
+
+
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
