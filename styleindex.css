@@ -1,0 +1,30 @@
+body {
+    background: radial-gradient(circle at center, #ffe485, #ff990a);
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #1f3b89;
+
+    transition: 0.8s;
+}
+
+a:hover {
+    background-color: orange;
+
+}
+
+h1 {
+    text-align: center;
+    color: #1f3b89;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
