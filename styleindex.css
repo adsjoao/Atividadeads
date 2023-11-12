@@ -19,6 +19,7 @@ a:hover {
 h1 {
     text-align: center;
     color: #1f3b89;
+    animation: fadeIn 5s ease-in-out;
 
 }
 
@@ -27,4 +28,15 @@ div {
     justify-content: center;
     margin: auto;
     font-size: larger;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
